@@ -1,11 +1,12 @@
-import mongoose from 'mongoose';
+// ==============================================
+// DIMON_CONNECT — Conexión SUPABASE
+// ==============================================
+import { createClient } from '@supabase/supabase-js';
+import dotenv from 'dotenv';
 
-export const connectDB = async () => {
-  try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI);
-    console.log(`✅ MongoDB conectado: ${conn.connection.name}`);
-  } catch (error) {
-    console.error('❌ Error DB:', error.message);
-    process.exit(1);
-  }
-};
+dotenv.config();
+
+const supabaseUrl = 'https://prometeoatenasades5781.supabase.co';
+const supabaseKey = process.env.SB_PUBLISHABLE_KEY;
+
+export const supabase = createClient(supabaseUrl, supabaseKey);
