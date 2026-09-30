@@ -2,11 +2,12 @@
   "name": "Dimon_Connect",
   "version": "1.0.0",
   "type": "module",
-  "description": "Plataforma mundial de servicios — Dimon Connect",
+  "description": "Plataforma de servicios — Dimon Connect",
   "main": "api/server.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "start": "node api/server.js"
   },
   "dependencies": {
