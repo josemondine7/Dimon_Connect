@@ -1,20 +1,29 @@
 services:
   - type: web
-    name: dimon-connect
-    env: node
-    region: us-east
-    plan: standard
+    name: Dimon_Connect
+    runtime: node
+    region: us-east-1
+    plan: free
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: node api/server.js
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
         value: 3001
-      - key: MONGODB_URI
-        sync: false
-      - key: JWT_SECRET
-        sync: false
+      - key: FRONTEND_URL
+        value: https://dimon-connect-bb87.onrender.com
+      - key: SUPABASE_URL
+        value: https://prometeoatenasades5781.supabase.co
+      - key: SB_PUBLISHABLE_KEY
+        value: sb_publishable_Vl7FzKhCGdTONP7asJZNmQ_DFZlr7nb
+      - key: DB_NAME
+        value: prometeoatenasades5781
       - key: JWT_EXPIRES_IN
         value: 7d
-    healthCheckPath: /api/health
+      - key: ADMIN_NAME
+        value: José María Mondine Lemos
+      - key: ADMIN_DOC
+        value: 43433929
+      - key: ADMIN_EMAIL
+        value: josemondine723@gmail.com
