@@ -1,34 +1,19 @@
 {
-  "name": "Dimon_Connect",
+  "name": "dimon-connect",
   "version": "1.0.0",
-  "type": "module",
-  "description": "Plataforma de servicios — Dimon Connect",
   "main": "api/server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "start": "node api/server.js"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.45.0",
     "express": "^4.21.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
+    "mongoose": "^8.7.0",
+    "@supabase/supabase-js": "^2.45.0",
     "jsonwebtoken": "^9.0.2",
-    "bcryptjs": "^2.4.3",
-    "express-validator": "^7.2.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.7"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "author": "José María Mondine Lemos",
-  "license": "UNLICENSED"
+  }
 }
