@@ -9,25 +9,26 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-// ✅ APUNTA A LA CARPETA PUBLIC — DONDE ESTÁN TUS PÁGINAS
-app.use(express.static(path.join(__dirname, '../public')));
+// ✅ APUNTA A PUBLIC — NO HAY MÁS DIST
+const carpetaPublica = path.join(__dirname, '../public');
+app.use(express.static(carpetaPublica));
 
-// ✅ Conectamos con Supabase — mongodb no se usa más
+// ✅ Conecta con Supabase
 require('./supabase');
 
-// ✅ Rutas de la plataforma
+// ✅ Todas las rutas
 app.use('/api/auth', require('./rutas-auth'));
 app.use('/api/publicaciones', require('./rutas-publicaciones'));
 app.use('/api/usuarios', require('./rutas-usuarios'));
 app.use('/api/tratos', require('./rutas-tratos'));
 
-// ✅ Cualquier dirección → lleva a la página principal
+// ✅ Página principal — desde PUBLIC
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-// ✅ Arranque del servidor
+// ✅ Mensaje de arranque CORREGIDO
 app.listen(PORT, () => {
   console.log(`✅ Dimon Connect funcionando en el puerto ${PORT}`);
-  console.log(`📁 Carpeta pública: ${path.join(__dirname, '../public')}`);
+  console.log(`📁 Carpeta pública: ${carpetaPublica}`);
 });
