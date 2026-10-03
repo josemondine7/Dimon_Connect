@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmar Trabajo — Dimon Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a href="trato-chat.html" class="volver">← Volver</a>
+    <h1>Confirmar Trabajo</h1>
+  </header>
+  <main>
+    <div class="tarjeta centro">
+      <h2>¿El trabajo está completo y correcto?</h2>
+      <p style="margin:20px 0; color:#94a3b8;">Al confirmar, el dinero se libera a la persona que realizó el servicio.</p>
+      <div style="display:flex; gap:10px; margin-top:20px;">
+        <button class="boton secundario" style="flex:1;">❌ No, hay problemas</button>
+        <button id="btn-confirmar" class="boton principal" style="flex:1;">✅ Sí, todo bien</button>
+      </div>
+    </div>
+  </main>
+  <script>
+    document.getElementById('btn-confirmar')?.addEventListener('click', () => {
+      alert('✅ Pago liberado. Gracias por usar Dimon Connect.');
+      window.location.href = 'descubrir.html';
+    });
+  </script>
+</body>
+</html>
