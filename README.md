@@ -20,7 +20,6 @@ Plataforma que conecta personas que ofrecen servicios con personas que los neces
 - Las comisiones se descuentan automáticamente en el proceso
 
 ## Datos
-- Creador: José María Mondine Lemos
-- Documento: 43433929
-- Correo: josemondine723@gmail.com
+- Creador: José Mondine 
+- Correo: dimon.connet@gmail.com
 - Versión: 1.0.0
