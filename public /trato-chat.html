@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trato — Dimon Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a href="descubrir.html" class="volver">← Volver</a>
+    <h1>Trato Protegido</h1>
+  </header>
+  <main>
+    <div class="tarjeta">
+      <h3>Acuerdo entre las partes</h3>
+      <p class="estado">Estado: <strong>Pendiente de pago</strong></p>
+      <hr style="margin:15px 0; border:none; border-top:1px solid #334155;">
+      <p>Monto acordado: <strong>$<span id="monto">0.00</span></strong></p>
+      <button class="boton principal" onclick="location.href='confirmar-pago.html'">✅ Ver y pagar</button>
+    </div>
+    <div class="tarjeta">
+      <h3>Chat</h3>
+      <div id="caja-mensajes" style="height:200px; overflow-y:auto; background:#1e293b; border-radius:8px; padding:10px; margin:10px 0;">
+        <p style="color:#94a3b8; font-style:italic;">Mensajes protegidos...</p>
+      </div>
+      <div style="display:flex; gap:8px;">
+        <input type="text" id="mensaje" placeholder="Escribir mensaje..." style="flex:1;">
+        <button class="boton principal" style="width:auto; padding:12px 20px;">Enviar</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/trato.js"></script>
+</body>
+</html>
