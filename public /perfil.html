@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil — Dimon Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Mi Perfil</h1>
+  </header>
+  <main>
+    <div class="tarjeta centro">
+      <div class="foto-perfil" id="foto-caja">J</div>
+      <h2 id="nombre-mostrar">Cargando...</h2>
+      <p class="usuario">@usuario</p>
+    </div>
+    
+    <div class="tarjeta">
+      <h3>💰 Saldo: $<span id="saldo">0.00</span></h3>
+      <button class="boton dorado" onclick="location.href='membresia.html'">👑 Activar Membresía — $20/mes</button>
+      <button class="boton secundario" style="margin-top:10px;">💳 Retirar dinero</button>
+      <button id="btn-salir" class="boton peligro" style="margin-top:20px;">🚪 Cerrar sesión</button>
+    </div>
+  </main>
+  <nav class="navegacion">
+    <button onclick="location.href='descubrir.html'">🏠</button>
+    <button onclick="location.href='publicar.html'">➕</button>
+    <button class="activa">👤</button>
+  </nav>
+  <script src="js/perfil.js"></script>
+</body>
+</html>
