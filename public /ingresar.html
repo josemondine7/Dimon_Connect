@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingresar — Dimon Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a href="index.html" class="volver">← Volver</a>
+    <h1>Ingresar</h1>
+  </header>
+  <main>
+    <div class="tarjeta">
+      <button id="btn-google" class="boton google">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+        Entrar con Google
+      </button>
+      <div class="separador">o con tu correo</div>
+      
+      <label>Correo</label>
+      <input type="email" id="correo" placeholder="tu@email.com">
+      
+      <label>Contraseña</label>
+      <input type="password" id="clave" placeholder="Tu contraseña">
+      
+      <button id="btn-ingresar" class="boton principal">✅ Entrar</button>
+      
+      <p class="texto-centro">¿No tenés cuenta? <a href="registrar.html">Crear cuenta</a></p>
+    </div>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>
