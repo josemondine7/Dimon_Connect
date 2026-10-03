@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmar Pago — Dimon Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a href="trato-chat.html" class="volver">← Volver</a>
+    <h1>Confirmar Pago</h1>
+  </header>
+  <main>
+    <div class="tarjeta">
+      <h3>Desglose</h3>
+      <div style="margin:15px 0;">
+        <p>Valor del servicio: <span style="float:right;">$<span id="valor-servicio">0.00</span></span></p>
+        <p>Comisión plataforma: <span style="float:right;" id="comision-texto">2%</span></p>
+        <hr style="margin:10px 0; border:none; border-top:1px solid #334155;">
+        <p style="font-size:18px; font-weight:bold;">Total a pagar: <span style="float:right; color:#00b4d8;">$<span id="total">0.00</span></span></p>
+      </div>
+      <p style="font-size:14px; color:#94a3b8; margin:15px 0;">✅ La plata queda retenida hasta que confirmes que el trabajo está bien hecho.</p>
+      <button id="btn-pagar" class="boton principal">💳 Pagar con PayPal</button>
+    </div>
+  </main>
+  <script src="js/pagos.js"></script>
+</body>
+</html>
