@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar — Dimon Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a href="descubrir.html" class="volver">← Volver</a>
+    <h1>Publicar</h1>
+  </header>
+  <main>
+    <div class="tarjeta">
+      <label>Tipo</label>
+      <select id="tipo">
+        <option value="busco">Busco servicio</option>
+        <option value="ofrezco">Ofrezco servicio</option>
+      </select>
+      
+      <label>Título</label>
+      <input type="text" id="titulo" placeholder="Breve descripción">
+      
+      <label>Detalles</label>
+      <textarea id="descripcion" rows="4" placeholder="Qué necesitás o qué ofrecés..."></textarea>
+      
+      <label>Precio estimado</label>
+      <input type="number" id="precio" placeholder="0.00">
+      
+      <label>Ciudad</label>
+      <input type="text" id="ciudad" placeholder="Tu ciudad">
+      
+      <button id="btn-publicar" class="boton principal">✅ Publicar</button>
+    </div>
+  </main>
+  <script src="js/publicar.js"></script>
+</body>
+</html>
