@@ -1,4 +1,4 @@
-# 🌟 Dimon Connect
+# Dimon Connect
 
 Plataforma que conecta personas que ofrecen servicios con personas que los necesitan — Montevideo, Uruguay.
 
