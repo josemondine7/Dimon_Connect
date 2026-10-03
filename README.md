@@ -1,21 +1,10 @@
-# Dimon_Connect
+# 🌟 Dimon Connect
 
-**Ecosistema global de servicios — Conectando personas en todo el mundo**
+Plataforma que conecta personas que ofrecen servicios con personas que los necesitan — Montevideo, Uruguay.
 
-## 📋 Descripción
-Dimon Connect es una plataforma mundial para conectar personas que ofrecen servicios con quienes los necesitan. Búsqueda por ciudad, país o mundo, 14 idiomas, pagos seguros y protección de datos.
-
-## 👤 Creador
-- **Nombre:** José María Mondine Lemos
-- **Documento:** 43433929
-- **Correo:** josemondine723@gmail.com
-
-## 🛠️ Tecnologías
-- Frontend: HTML + CSS + JavaScript + React + Vite
-- Backend: Node.js + Express
-- Base de datos: MongoDB Atlas
-- Autenticación: JWT
-- Despliegue: Render
-- Pagos: PayPal
-
-## 📦 Estructura
+## ¿Qué tiene?
+- Entrada con Google o con correo y contraseña
+- Publicar servicios o solicitudes
+- Deslizar y descubrir cerca tuyo
+- Pago protegido: la plata se retiene hasta confirmar el trabajo
+- Membresía para aparecer primero
