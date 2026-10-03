@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cuenta — Dimon Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a href="index.html" class="volver">← Volver</a>
+    <h1>Crear Cuenta</h1>
+  </header>
+  <main>
+    <div class="tarjeta">
+      <button id="btn-google" class="boton google">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+        Crear con Google
+      </button>
+      <div class="separador">o llená tus datos</div>
+      
+      <label>Nombre completo</label>
+      <input type="text" id="nombre" placeholder="Tu nombre y apellido">
+      
+      <label>Nombre de usuario</label>
+      <input type="text" id="usuario" placeholder="@ejemplo">
+      
+      <label>Correo electrónico</label>
+      <input type="email" id="correo" placeholder="tu@email.com">
+      
+      <label>Contraseña</label>
+      <input type="password" id="clave" placeholder="Mínimo 6 caracteres">
+      
+      <label>Repetir contraseña</label>
+      <input type="password" id="clave2" placeholder="Escribila de nuevo">
+      
+      <label class="opcion">
+        <input type="checkbox" id="acepto">
+        Acepto términos y privacidad
+      </label>
+      
+      <button id="btn-crear" class="boton principal">✅ Crear cuenta</button>
+      
+      <p class="texto-centro">¿Ya tenés cuenta? <a href="ingresar.html">Ingresar</a></p>
+    </div>
+  </main>
+  <script src="js/registrar.js"></script>
+</body>
+</html>
